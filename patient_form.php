@@ -24,7 +24,7 @@
         <div class="column">
             <div class="field">
                 <label class="label">เลขบัตรประชาชน</label>
-                <div class="control"><input class="input" type="text" name="idcard" value="1509999999999"></div>
+                <div class="control"><input class="input" type="text" name="idcard" value="3521300298138"></div>
             </div>
         </div>
         <div class="column">
@@ -77,7 +77,7 @@
                         <div class="field is-grouped">
                             <div class="control">
                                 <div class="select">
-                                    <?php getDateList('days', '23');?>
+                                    <?php getDateList('days', '05');?>
                                 </div>
                             </div>
                             <div class="control">
@@ -90,7 +90,7 @@
                                     <?php 
                                     $yRange = range(date('Y'), (date('Y')-80));
                                     ?>
-                                    <?php getYearList('years',false,date('Y'),$yRange);?>
+                                    <?php getYearList('years',false,1960,$yRange);?>
                                 </div>
                             </div>
                         </div>
@@ -222,7 +222,7 @@
                 </div>
                 <div class="control">
                     <label class="radio">
-                        <input type="radio" name="retinal_exam" checked="checked">No DR
+                        <input type="radio" name="retinal_exam">No DR
                     </label>
                 </div>
                 <div class="control">
@@ -237,7 +237,7 @@
                 </div>
                 <div class="control">
                     <label class="radio">
-                        <input type="radio" name="retinal_exam">Severe NPDR
+                        <input type="radio" name="retinal_exam" checked="checked">Severe NPDR
                     </label>
                 </div>
                 <div class="control">
@@ -261,7 +261,7 @@
                 </div>
                 <div class="columns">
                     <div class="column">
-                        <img id="output" style="width: 350px;" src="images/c0272524-diabetic-retinopathy-nonproliferative-science-photo-library-high.jpg">
+                        <img id="output" style="width: 350px;" src="images/retinal-exam.jpg">
                     </div>
                 </div>
 
@@ -276,12 +276,12 @@
                 </div>
                 <div class="control">
                     <label class="radio">
-                        <input type="radio" name="foot_exam" checked="checked">Low Risk
+                        <input type="radio" name="foot_exam">Low Risk
                     </label>
                 </div>
                 <div class="control">
                     <label class="radio">
-                        <input type="radio" name="foot_exam">Moderate Risk
+                        <input type="radio" name="foot_exam" checked="checked">Moderate Risk
                     </label>
                 </div>
                 <div class="control">
@@ -305,7 +305,7 @@
                 </div>
                 <div class="columns">
                     <div class="column">
-                        <img id="output2" style="width: 350px;">
+                        <img id="output2" style="width: 350px;" src="images/foot-exam.png">
                     </div>
                 </div>
             </div>
@@ -324,7 +324,7 @@
                 </div>
                 <div class="control">
                     <label class="radio">
-                        <input type="radio" name="teeth">ไม่ได้รับการตรวจ
+                        <input type="radio" name="teeth" checked="checked">ไม่ได้รับการตรวจ
                     </label>
                 </div>
 
@@ -365,7 +365,7 @@
                 <label class="label">โรคร่วม HT</label>
                 <div class="control">
                     <label class="radio">
-                        <input type="radio" name="disease_ht">No
+                        <input type="radio" name="disease_ht" checked="checked">No
                     </label>
                     <label class="radio">
                         <input type="radio" name="disease_ht">Essential HT
@@ -412,12 +412,12 @@
                 </div>
                 <div class="control">
                     <label class="checkbox">
-                        <input type="checkbox" name="disease_etc[]">Foot ulcer
+                        <input type="checkbox" name="disease_etc[]" checked="checked">Foot ulcer
                     </label>
                 </div>
                 <div class="control">
                     <label class="checkbox">
-                        <input type="checkbox" name="disease_etc[]">Retinopathy
+                        <input type="checkbox" name="disease_etc[]" checked="checked">Retinopathy
                     </label>
                 </div>
                 <div class="control">
@@ -525,8 +525,91 @@
         </div>
     </div>
 
+    <div class="columns">
+        <div class="column">
+            <div class="field">
+                <label class="label">BS</label>
+                <div class="columns is-variable is-1">
+                    <div class="column">
+                        <div class="field has-addons">
+                        <p class="control"><input class="input" type="text" name="bs" value="202"> </p>
+                        <p class="control"><a class="button is-static">mg/dl</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    
+        <div class="column">
+            <div class="field">
+                <label class="label">HbA1c</label>
+                <div class="columns is-variable is-1">
+                    <div class="column">
+                        <div class="field has-addons">
+                        <p class="control"><input class="input" type="text" name="hba1c" value="9.3"> </p>
+                        <p class="control"><a class="button is-static">%</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="field">
+                <label class="label">LDL</label>
+                <div class="columns is-variable is-1">
+                    <div class="column">
+                        <div class="field has-addons">
+                        <p class="control"><input class="input" type="text" name="ldl" value="32"> </p>
+                        <p class="control"><a class="button is-static">mg/dl</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="field">
+                <label class="label">Creatinine</label>
+                <div class="columns is-variable is-1">
+                    <div class="column">
+                        <div class="field has-addons">
+                        <p class="control"><input class="input" type="text" name="creatinine" value="1.28"> </p>
+                        <p class="control"><a class="button is-static">mg/dl</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column">
+            <div class="field">
+                <label class="label">Urine protein</label>
+                <div class="control"><input class="input" type="text" name="urine_protein" value=""></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="field">
+                <label class="label">UA</label>
+                <div class="control"><input class="input" type="text" name="ua" value=""></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="field">
+                <label class="label">Microalbuminuria</label>
+                <div class="control"><input class="input" type="text" name="microalbuminuria" value=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns">
+        <div class="column">
+            <div class="field">
+                <img src="images/bs.png" alt="images">
+            </div>
+        </div>
+    </div>
 
     <div class="field is-grouped-centered">
         <div class="control">
@@ -595,7 +678,8 @@ bulmaCalendar.attach('#disease_etc_date', {
     "type":"date",
     "showHeader":false,
     "lang":"th",
-    "dateFormat":"YYYY/MM/DD"
+    "dateFormat":"YYYY/MM/DD",
+    startDate: new Date('01/01/2019')
 });
 
 
