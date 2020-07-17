@@ -8,378 +8,298 @@
 }
 </style>
 
-<section class="hero is-light">
-    <div class="hero-body">
-        <div class="container">
-            <h1 class="title">ฟอร์มบันทึกข้อมูลเบาหวาน</h1>
-        </div>
-    </div>
-</section>
+<link rel="stylesheet" href="bootstrap-datepicker-master/dist/css/bootstrap-datepicker3.min.css">
+<script src="bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="bootstrap-datepicker-master/dist/locales/bootstrap-datepicker.th.min.js"></script>
 
-<div style="padding: 4px;">
+<div class="jumbotron">
+    <h1>ฟอร์มบันทึกข้อมูลเบาหวาน</h1>
+</div>
 
 <form action="index.php" method="post">
-
-    <div class="columns is-variable is-1">
-        <div class="column">
-            <div class="field">
-                <label class="label">เลขบัตรประชาชน</label>
-                <div class="control"><input class="input" type="text" name="idcard" value="3521300298138"></div>
+    <div class="row">
+        <div class="col-md">
+            <div class="form-group">
+                <label for="idcard" class="font-weight-bold">เลขบัตรประชาชน</label>
+                <input type="text" class="form-control" id="idcard" name="idcard" value="3521300298138">
             </div>
         </div>
-        <div class="column">
-            <div class="field">
-                <label class="label">วันที่ลงทะเบียน</label>
-                <div class="control">
-                    <input class="input" type="text" name="date_register" id="date_register" value="26-06-2020">
-                </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="date_register" class="font-weight-bold">วันที่ลงทะเบียน</label>
+                <input type="text" class="form-control" id="date_register" name="date_register" value="26-06-2020">
             </div>
         </div>
-        <div class="column">
-            <div class="field">
-                <label class="label">DM Number</label>
-                <div class="control">3428</div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="date_register" class="font-weight-bold">DM Number</label>
+                <p>3428</p>
             </div>
         </div>
     </div>
-
-    <div class="columns is-variable is-1">
-        <div class="column is-2">
-            <div class="field">
-                <label class="label">ยศ/คำนำหน้าชื่อ</label>
-                <div class="control">
-                    <input class="input" type="text" name="yot" value="นาง">
-                </div>
+    <div class="row">
+        <div class="col-md">
+            <div class="form-group">
+                <label for="yot" class="font-weight-bold">ยศ/คำนำหน้าชื่อ</label>
+                <input type="text" class="form-control" id="yot" name="yot" value="นาง">
             </div>
         </div>
-        <div class="column">
-            <div class="field">
-                <label class="label">ชื่อ</label>
-                <div class="control">
-                    <input class="input" type="text" name="name" value="สุคนธ์ทิพย์">
-                </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="name" class="font-weight-bold">ชื่อ</label>
+                <input type="text" class="form-control" id="name" name="name" value="นาง">
             </div>
         </div>
-        <div class="column">
-            <div class="field">
-                <label class="label">นามสกุล</label>
-                <div class="control">
-                    <input class="input" type="text" name="surname" value="สิทธิหล้า">
-                </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="surname" class="font-weight-bold">นามสกุล</label>
+                <input type="text" class="form-control" id="surname" name="surname" value="สิทธิหล้า">
             </div>
         </div>
-
-        <div class="column">
-            <div class="field">
-                <label class="label">วัน-เดือน-ปี เกิด</label>
-                <div class="columns">
-                    <div class="column">
-                        <div class="field is-grouped">
-                            <div class="control">
-                                <div class="select">
-                                    <?php getDateList('days', '05');?>
-                                </div>
-                            </div>
-                            <div class="control">
-                                <div class="select">
-                                    <?php getMonthList('months','06');?>
-                                </div>
-                            </div>
-                            <div class="control">
-                                <div class="select">
-                                    <?php 
-                                    $yRange = range(date('Y'), (date('Y')-80));
-                                    ?>
-                                    <?php getYearList('years',false,1960,$yRange);?>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label class="font-weight-bold">วัน-เดือน-ปี เกิด</label>
+                <input type="text" class="form-control" id="birthDate" name="birthDate" value="1960-06-05">
             </div>
         </div>
     </div>
-
-    <div class="columns is-variable is-1">
-        <div class="column">
-            <div class="field">
-                <label class="label">ส่วนสูง</label>
-                <div class="columns is-variable is-1">
-                    <div class="column">
-                        <div class="field has-addons">
-                        <p class="control"><input class="input" type="text" name="height" value="148"> </p>
-                        <p class="control"><a class="button is-static">ซม.</a></p>
-                        </div>
+    <div class="row">
+        <div class="col-md">
+            <div class="form-group">
+                <label for="yot" class="font-weight-bold">ส่วนสูง</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="height" name="height" value="148" aria-describedby="aria-height">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="aria-height">ซม.</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="column">
-            <div class="field">
-                <label class="label">น้ำหนัก</label>
-                <div class="columns is-variable is-1">
-                    <div class="column">
-                        <div class="field has-addons">
-                        <p class="control"><input class="input" type="text" name="weight" value="50"> </p>
-                        <p class="control"><a class="button is-static">กก.</a></p>
-                        </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="yot" class="font-weight-bold">น้ำหนัก</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="weight" name="weight" value="148" aria-describedby="aria-weight">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="aria-weight">กก.</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="column">
-            <div class="field">
-                <label class="label">รอบเอว</label>
-                <div class="columns is-variable is-1">
-                    <div class="column">
-                        <div class="field has-addons">
-                        <p class="control"><input class="input" type="text" name="waist" value="81"> </p>
-                        <p class="control"><a class="button is-static">ซม.</a></p>
-                        </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="yot" class="font-weight-bold">รอบเอว</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="waist" name="waist" value="81" aria-describedby="aria-waist">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="aria-waist">กก.</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="column">
-            <div class="field">
-                <label class="label">อุณหภูมิ</label>
-                <div class="columns is-variable is-1">
-                    <div class="column">
-                        <div class="field has-addons">
-                        <p class="control"><input class="input" type="text" name="temp" value="36.1"> </p>
-                        <p class="control"><a class="button is-static">&#8451</a></p>
-                        </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="yot" class="font-weight-bold">อุณหภูมิ</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="temp" name="temp" value="36.1" aria-describedby="aria-temp">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="aria-temp">กก.</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="columns is-variable is-1">
-        <div class="column">
-            <div class="field">
-                <label class="label">Pulse</label>
-                <div class="columns is-variable is-1">
-                    <div class="column">
-                        <div class="field has-addons">
-                        <p class="control"><input class="input" type="text" name="pulse" value="84"> </p>
-                        <p class="control"><a class="button is-static">ครั้ง/นาที</a></p>
-                        </div>
+    <div class="row">
+        <div class="col-md">
+            <div class="form-group">
+                <label for="yot" class="font-weight-bold">Pulse</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="pulse" name="pulse" value="84" aria-describedby="aria-pulse">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="aria-pulse">ครั้ง/นาที</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="column">
-            <div class="field">
-                <label class="label">Rate</label>
-                <div class="columns is-variable is-1">
-                    <div class="column">
-                        <div class="field has-addons">
-                        <p class="control"><input class="input" type="text" name="rate" value="20"> </p>
-                        <p class="control"><a class="button is-static">ครั้ง/นาที</a></p>
-                        </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="yot" class="font-weight-bold">Rate</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="rate" name="rate" value="20" aria-describedby="aria-rate">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="aria-rate">ครั้ง/นาที</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="column">
-            <div class="field">
-                <label class="label">BMI</label>
-                <div class="columns is-variable is-1">
-                    <div class="column">
-                        <div class="field ">
-                        <?php $bmi = (50/(1.48*1.48)); ?>
-                        <p class="control"><input class="input" type="text" name="bmi" value="22.83"></p>
-                        เกณฑ์ ปกติ
-                        </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="yot" class="font-weight-bold">BMI</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="bmi" name="bmi" value="22.83" aria-describedby="bmi">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="bmi">กก.</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="column">
-            <div class="field">
-                <label class="label">ความดัน</label>
-                <div class="columns is-variable is-1">
-                    <div class="column is-6">
-                        <p class="control"><input class="input" type="text" placeholder="Sys" name="bp1" value="115"></p>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="yot" class="font-weight-bold">ความดัน</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="sys" name="sys" value="115" aria-describedby="sys">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="temp">/</span>
                     </div>
-                    <div class="column is-6">
-                        <div class="field ">
-                            <p class="control"><input class="input" type="text" placeholder="Dia" name="bp2" value="60"></p>
-                        </div>
-                    </div>
+                    <input type="text" class="form-control" id="dia" name="dia" value="60" >
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="columns is-variable">
-        <div class="column is-4">
-            <div class="field">
-                <label class="label">Retinal Exam</label>
-                <div class="control">
-                    <input class="input" type="date" name="retinal_exam_date" id="retinal_exam_date">
-                </div>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="retinal_exam">No DR
-                    </label>
-                </div>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="retinal_exam">Mild NPDR
-                    </label>
-                </div>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="retinal_exam">Moderate NPDR
-                    </label>
-                </div>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="retinal_exam" checked="checked">Severe NPDR
-                    </label>
-                </div>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="retinal_exam">PDR
-                    </label>
-                </div>
-                
-                <div class="control">
-                    <div class="file">
-                        <label class="file-label">
-                            <input class="file-input" type="file" name="resume" accept="image/*" onchange="loadFile(event,'output')">
-                            <span class="file-cta">
-                            <span class="file-icon">
-                                <i class="fas fa-upload"></i>
-                            </span>
-                            <span class="file-label">เลือกรูป</span>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column">
-                        <img id="output" style="width: 350px;" src="images/retinal-exam.jpg">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="column is-4">
-            <div class="field">
-                <label class="label">Foot Exam</label>
-                <div class="control">
-                    <input class="input" type="text" name="foot_exam_date" id="foot_exam_date" value="">
-                </div>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="foot_exam">Low Risk
-                    </label>
-                </div>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="foot_exam" checked="checked">Moderate Risk
-                    </label>
-                </div>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="foot_exam">Hight Risk
-                    </label>
-                </div>
-
-                <div class="control">
-                    <div class="file">
-                        <label class="file-label">
-                            <input class="file-input" type="file" name="resume" accept="image/*" onchange="loadFile(event,'output2')">
-                            <span class="file-cta">
-                            <span class="file-icon">
-                                <i class="fas fa-upload"></i>
-                            </span>
-                            <span class="file-label">เลือกรูป</span>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column">
-                        <img id="output2" style="width: 350px;" src="images/foot-exam.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="column is-4">
-            <div class="field">
-                <label class="label">ตรวจสุขภาพฟัน</label>
-                <div class="control">
-                    <input class="input" type="date" name="teeth_date" id="teeth_date">
-                </div>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="teeth">ได้รับการตรวจ
-                    </label>
-                </div>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="teeth" checked="checked">ไม่ได้รับการตรวจ
-                    </label>
-                </div>
-
-                
+    <div class="row">
+        <div class="col-md col-lg-4">
+            <div class="form-group">
+                <label for="doctor_name" class="font-weight-bold">แพทย์ผู้ทำการตรวจรักษา</label>
+                <input type="text" class="form-control" id="doctor_name" name="doctor_name" value="น.พ.ทดสอบ นามสกุล">
             </div>
         </div>
     </div>
-
-    <div class="columns">
-        <div class="column">
-            <div class="field">
-                <label class="label">การวินิจฉัย</label>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="diag">DM type1
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="diag" checked="checked">DM type2
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="diag">Uncertain type
-                    </label>
+    <div class="row">
+        <div class="col-md">
+            <div class="form-group">
+                <label for="retinal_exam_date" class="font-weight-bold">Retinal Exam</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="retinal_exam_date" name="retinal_exam_date">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="retinal_exam" id="retinal_exam1">
+                    <label class="form-check-label" for="retinal_exam1">No DR</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="retinal_exam" id="retinal_exam2">
+                    <label class="form-check-label" for="retinal_exam2">Mild NPDR</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="retinal_exam" id="retinal_exam3">
+                    <label class="form-check-label" for="retinal_exam3">Moderate NPDR</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="retinal_exam" id="retinal_exam4" checked="checked">
+                    <label class="form-check-label" for="retinal_exam4">Severe NPDR</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="retinal_exam" id="retinal_exam5">
+                    <label class="form-check-label" for="retinal_exam5">PDR</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="retinal_exam_img">เลือกรูป</label>
+                <input type="file" class="form-control-file" name="retinal_exam_img" id="retinal_exam_img" accept="image/*" onchange="loadFile(event,'retinalExample')">
+                <div>
+                    <img id="retinalExample" style="width: 350px;" src="images/retinal-exam.jpg">
                 </div>
             </div>
         </div>
-        <div class="column">
-            <div class="field">
-                <div class="control">
-                    การวินิจฉัยครั้งแรก ประมาณ พ.ศ. <input class="input" type="date" name="diag_date" id="diag_date">
+        <div class="col-md">
+            <div class="form-group">
+                <label for="foot_exam_date" class="font-weight-bold">Foot Exam</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="foot_exam_date" name="foot_exam_date">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="foot_exam" id="foot_exam1">
+                    <label class="form-check-label" for="foot_exam1">Low Risk</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="foot_exam" id="foot_exam2" checked="checked">
+                    <label class="form-check-label" for="foot_exam2">Moderate Risk</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="foot_exam" id="foot_exam3">
+                    <label class="form-check-label" for="foot_exam3">Hight Risk</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="foot_exam_img">เลือกรูป</label>
+                <input type="file" class="form-control-file" name="foot_exam_img" id="foot_exam_img" accept="image/*" onchange="loadFile(event,'retinalExample')">
+                <div>
+                    <img id="retinalExample" style="width: 350px;" src="images/foot-exam.png">
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="teeth_date" class="font-weight-bold">ตรวจสุขภาพฟัน</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="teeth_date" name="teeth_date">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="teeth" id="teeth1">
+                    <label class="form-check-label" for="teeth1">ได้รับการตรวจ</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="teeth" id="teeth2" checked="checked">
+                    <label class="form-check-label" for="teeth2">ไม่ได้รับการตรวจ</label>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="columns">
-        <div class="column">
-            <div class="field">
-                <label class="label">โรคร่วม HT</label>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="disease_ht" checked="checked">No
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="disease_ht">Essential HT
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="disease_ht">Secondary HT
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="disease_ht">Uncertain type
-                    </label>
+    <div class="row">
+        <div class="col-md">
+            <div class="form-group">
+                <label class="font-weight-bold">การวินิจฉัย</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="diag" id="diag1">
+                    <label class="form-check-label" for="diag1">DM type1</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="diag" id="diag2" checked="checked">
+                    <label class="form-check-label" for="diag2">DM type2</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="diag" id="diag2" checked="checked">
+                    <label class="form-check-label" for="diag2">Uncertain type</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="diag_date" class="font-weight-bold">การวินิจฉัยครั้งแรก ประมาณ พ.ศ.</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="diag_date" name="diag_date">
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="doctor_name" class="font-weight-bold">โรคร่วม HT</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="disease_ht" id="disease_ht1" checked="checked">
+                    <label class="form-check-label" for="disease_ht1">No</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="disease_ht" id="disease_ht2">
+                    <label class="form-check-label" for="disease_ht2">Essential HT</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="disease_ht" id="disease_ht2">
+                    <label class="form-check-label" for="disease_ht2">Secondary HT</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="disease_ht" id="disease_ht2">
+                    <label class="form-check-label" for="disease_ht2">Uncertain type</label>
                 </div>
             </div>
         </div>
+        <div class="col-md">
+            xxx
+        </div>
     </div>
+
+
+
+
+
+
 
     <div class="columns">
         <div class="column">
@@ -606,7 +526,7 @@
     <div class="columns">
         <div class="column">
             <div class="field">
-                <img src="images/bs.png" alt="images">
+                <!-- <img src="images/bs.png" alt="images"> -->
             </div>
         </div>
     </div>
@@ -619,7 +539,7 @@
         </div>
     </div>
 
-</div>
+
 
 
 
@@ -634,76 +554,38 @@ var loadFile = function(event,divId) {
     }
 };
 
-
-bulmaCalendar.attach('#date_register', { 
-    "type":"date",
-    "showHeader":false,
-    "lang":"th",
-    "dateFormat":"YYYY/MM/DD",
-    startDate: new Date('06/26/2020')
+$('#birthDate').datepicker({
+    format: "yyyy-mm-dd",
+    language: "th",
+    todayHighlight: true,
+    clearBtn: true,
+    todayBtn: true
 });
 
-bulmaCalendar.attach('#retinal_exam_date', { 
-    "type":"date",
-    "showHeader":false,
-    "lang":"th",
-    "dateFormat":"YYYY/MM/DD"
+$('#retinal_exam_date').datepicker({
+    format: "yyyy-mm-dd",
+    language: "th",
+    todayHighlight: true,
+    clearBtn: true,
+    todayBtn: true
 });
 
-bulmaCalendar.attach('#foot_exam_date', { 
-    "type":"date",
-    "showHeader":false,
-    "lang":"th",
-    startDate: new Date('06/26/2020'),
-    "dateFormat":"YYYY/MM/DD"
+$('#foot_exam_date').datepicker({
+    format: "yyyy-mm-dd",
+    language: "th",
+    todayHighlight: true,
+    clearBtn: true,
+    todayBtn: true
 });
 
-bulmaCalendar.attach('#teeth_date', { 
-    "type":"date",
-    "showHeader":false,
-    "lang":"th",
-    "dateFormat":"YYYY/MM/DD"
-});
-
-
-bulmaCalendar.attach('#diag_date', { 
-    "type":"date",
-    "showHeader":false,
-    "lang":"th",
-    "dateFormat":"YYYY/MM/DD",
-    startDate: new Date('01/01/2019')
-});
-
-bulmaCalendar.attach('#disease_etc_date', { 
-    "type":"date",
-    "showHeader":false,
-    "lang":"th",
-    "dateFormat":"YYYY/MM/DD",
-    startDate: new Date('01/01/2019')
+$('#teeth_date').datepicker({
+    format: "yyyy-mm-dd",
+    language: "th",
+    todayHighlight: true,
+    clearBtn: true,
+    todayBtn: true
 });
 
 
-bulmaCalendar.attach('#foot_care_date', { 
-    "type":"date",
-    "showHeader":false,
-    "lang":"th",
-    "dateFormat":"YYYY/MM/DD"
-});
-
-
-bulmaCalendar.attach('#nutrition_date', { 
-    "type":"date",
-    "showHeader":false,
-    "lang":"th",
-    "dateFormat":"YYYY/MM/DD"
-});
-
-
-bulmaCalendar.attach('#exercise_date', { 
-    "type":"date",
-    "showHeader":false,
-    "lang":"th",
-    "dateFormat":"YYYY/MM/DD"
-});
 
 </script>
