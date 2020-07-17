@@ -2,7 +2,7 @@
     <h1>ข้อมูลผู้ป่วยเบาหวาน</h1>
 </div>
 <div class="row">
-    <div class="col-md-auto">
+    <div class="col-md">
         <table class="table table-striped">
             <thead>
                 <tr>

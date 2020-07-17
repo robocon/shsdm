@@ -27,7 +27,7 @@
         <div class="col-md">
             <div class="form-group">
                 <label for="date_register" class="font-weight-bold">วันที่ลงทะเบียน</label>
-                <input type="text" class="form-control" id="date_register" name="date_register" value="26-06-2020">
+                <input type="text" class="form-control" id="date_register" name="date_register" value="2020-06-26">
             </div>
         </div>
         <div class="col-md">
@@ -157,6 +157,23 @@
         </div>
     </div>
     <div class="row">
+        <div class="col-md col-lg-3">
+            <div class="form-group">
+                <label for="cigarette_date" class="font-weight-bold">ประวัติบุหรี่</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="cigarette" id="cigarette1">
+                    <label class="custom-control-label" for="cigarette1">สูบบุหรี่</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="cigarette" id="cigarette2" checked="checked">
+                    <label class="custom-control-label" for="cigarette2">ไม่สูบบุหรี่</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="cigarette" id="cigarette3" checked="checked">
+                    <label class="custom-control-label" for="cigarette3">N/A</label>
+                </div>
+            </div>
+        </div>
         <div class="col-md col-lg-4">
             <div class="form-group">
                 <label for="doctor_name" class="font-weight-bold">แพทย์ผู้ทำการตรวจรักษา</label>
@@ -169,34 +186,34 @@
             <div class="form-group">
                 <label for="retinal_exam_date" class="font-weight-bold">Retinal Exam</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="retinal_exam_date" name="retinal_exam_date">
+                    <input type="text" class="form-control" id="retinal_exam_date" name="retinal_exam_date" value="2020-06-26">
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="retinal_exam" id="retinal_exam1">
-                    <label class="form-check-label" for="retinal_exam1">No DR</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="retinal_exam" id="retinal_exam1">
+                    <label class="custom-control-label" for="retinal_exam1">No DR</label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="retinal_exam" id="retinal_exam2">
-                    <label class="form-check-label" for="retinal_exam2">Mild NPDR</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="retinal_exam" id="retinal_exam2">
+                    <label class="custom-control-label" for="retinal_exam2">Mild NPDR</label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="retinal_exam" id="retinal_exam3">
-                    <label class="form-check-label" for="retinal_exam3">Moderate NPDR</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="retinal_exam" id="retinal_exam3">
+                    <label class="custom-control-label" for="retinal_exam3">Moderate NPDR</label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="retinal_exam" id="retinal_exam4" checked="checked">
-                    <label class="form-check-label" for="retinal_exam4">Severe NPDR</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="retinal_exam" id="retinal_exam4" checked="checked">
+                    <label class="custom-control-label" for="retinal_exam4">Severe NPDR</label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="retinal_exam" id="retinal_exam5">
-                    <label class="form-check-label" for="retinal_exam5">PDR</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="retinal_exam" id="retinal_exam5">
+                    <label class="custom-control-label" for="retinal_exam5">PDR</label>
                 </div>
             </div>
             <div class="form-group">
                 <label for="retinal_exam_img">เลือกรูป</label>
                 <input type="file" class="form-control-file" name="retinal_exam_img" id="retinal_exam_img" accept="image/*" onchange="loadFile(event,'retinalExample')">
                 <div>
-                    <img id="retinalExample" style="width: 350px;" src="images/retinal-exam.jpg">
+                    <img id="retinalExample" class="img-thumbnail" style="max-width: 300px; max-height: 300px;" src="images/retinal-exam.jpg">
                 </div>
             </div>
         </div>
@@ -204,26 +221,26 @@
             <div class="form-group">
                 <label for="foot_exam_date" class="font-weight-bold">Foot Exam</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="foot_exam_date" name="foot_exam_date">
+                    <input type="text" class="form-control" id="foot_exam_date" name="foot_exam_date" value="2020-06-26">
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="foot_exam" id="foot_exam1">
-                    <label class="form-check-label" for="foot_exam1">Low Risk</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="foot_exam" id="foot_exam1">
+                    <label class="custom-control-label" for="foot_exam1">Low Risk</label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="foot_exam" id="foot_exam2" checked="checked">
-                    <label class="form-check-label" for="foot_exam2">Moderate Risk</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="foot_exam" id="foot_exam2" checked="checked">
+                    <label class="custom-control-label" for="foot_exam2">Moderate Risk</label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="foot_exam" id="foot_exam3">
-                    <label class="form-check-label" for="foot_exam3">Hight Risk</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="foot_exam" id="foot_exam3">
+                    <label class="custom-control-label" for="foot_exam3">Hight Risk</label>
                 </div>
             </div>
             <div class="form-group">
                 <label for="foot_exam_img">เลือกรูป</label>
-                <input type="file" class="form-control-file" name="foot_exam_img" id="foot_exam_img" accept="image/*" onchange="loadFile(event,'retinalExample')">
+                <input type="file" class="form-control-file" name="foot_exam_img" id="foot_exam_img" accept="image/*" onchange="loadFile(event,'footExample')">
                 <div>
-                    <img id="retinalExample" style="width: 350px;" src="images/foot-exam.png">
+                    <img id="footExample" class="img-thumbnail" style="max-width: 300px; max-height: 300px;" src="images/foot-exam.png">
                 </div>
             </div>
         </div>
@@ -233,13 +250,13 @@
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" id="teeth_date" name="teeth_date">
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="teeth" id="teeth1">
-                    <label class="form-check-label" for="teeth1">ได้รับการตรวจ</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="teeth" id="teeth1">
+                    <label class="custom-control-label" for="teeth1">ได้รับการตรวจ</label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="teeth" id="teeth2" checked="checked">
-                    <label class="form-check-label" for="teeth2">ไม่ได้รับการตรวจ</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="teeth" id="teeth2" checked="checked">
+                    <label class="custom-control-label" for="teeth2">ไม่ได้รับการตรวจ</label>
                 </div>
             </div>
         </div>
@@ -248,300 +265,224 @@
         <div class="col-md">
             <div class="form-group">
                 <label class="font-weight-bold">การวินิจฉัย</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="diag" id="diag1">
-                    <label class="form-check-label" for="diag1">DM type1</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="diag" id="diag1">
+                    <label class="custom-control-label" for="diag1">DM type1</label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="diag" id="diag2" checked="checked">
-                    <label class="form-check-label" for="diag2">DM type2</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="diag" id="diag2" checked="checked">
+                    <label class="custom-control-label" for="diag2">DM type2</label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="diag" id="diag2" checked="checked">
-                    <label class="form-check-label" for="diag2">Uncertain type</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="diag" id="diag3">
+                    <label class="custom-control-label" for="diag3">Uncertain type</label>
                 </div>
             </div>
             <div class="form-group">
                 <label for="diag_date" class="font-weight-bold">การวินิจฉัยครั้งแรก ประมาณ พ.ศ.</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="diag_date" name="diag_date">
+                    <input type="text" class="form-control" id="diag_date" name="diag_date" value="2020-06-26">
                 </div>
             </div>
-            
         </div>
         <div class="col-md">
             <div class="form-group">
                 <label for="doctor_name" class="font-weight-bold">โรคร่วม HT</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="disease_ht" id="disease_ht1" checked="checked">
-                    <label class="form-check-label" for="disease_ht1">No</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="disease_ht" id="disease_ht1" checked="checked">
+                    <label class="custom-control-label" for="disease_ht1">No</label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="disease_ht" id="disease_ht2">
-                    <label class="form-check-label" for="disease_ht2">Essential HT</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="disease_ht" id="disease_ht2">
+                    <label class="custom-control-label" for="disease_ht2">Essential HT</label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="disease_ht" id="disease_ht2">
-                    <label class="form-check-label" for="disease_ht2">Secondary HT</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="disease_ht" id="disease_ht2">
+                    <label class="custom-control-label" for="disease_ht2">Secondary HT</label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="disease_ht" id="disease_ht2">
-                    <label class="form-check-label" for="disease_ht2">Uncertain type</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="disease_ht" id="disease_ht2">
+                    <label class="custom-control-label" for="disease_ht2">Uncertain type</label>
                 </div>
             </div>
         </div>
         <div class="col-md">
-            xxx
-        </div>
-    </div>
-
-
-
-
-
-
-
-    <div class="columns">
-        <div class="column">
-            <div class="field">
-                <label class="label">โรคร่วมอื่นๆ</label>
-                <div class="control">
-                    <label class="checkbox">
-                        <input type="checkbox" name="disease_etc[]">Neuropathy
-                    </label>
+            <div class="form-group">
+                <label for="doctor_name" class="font-weight-bold">โรคร่วมอื่นๆ</label>
+                <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" name="disease_etc[]" id="disease_etc1" checked="checked">
+                    <label class="custom-control-label" for="disease_etc1">Neuropathy</label>
                 </div>
-                <div class="control">
-                    <label class="checkbox">
-                        <input type="checkbox" name="disease_etc[]">Heart Failure
-                    </label>
+                <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" name="disease_etc[]" id="disease_etc2">
+                    <label class="custom-control-label" for="disease_etc2">Heart Failure</label>
                 </div>
-                <div class="control">
-                    <label class="checkbox">
-                        <input type="checkbox" name="disease_etc[]">Nephropathy
-                    </label>
+                <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" name="disease_etc[]" id="disease_etc3">
+                    <label class="custom-control-label" for="disease_etc3">Nephropathy</label>
                 </div>
-                <div class="control">
-                    <label class="checkbox">
-                        <input type="checkbox" name="disease_etc[]">CVD
-                    </label>
+                <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" name="disease_etc[]" id="disease_etc4">
+                    <label class="custom-control-label" for="disease_etc4">CVD</label>
                 </div>
-                <div class="control">
-                    <label class="checkbox">
-                        <input type="checkbox" name="disease_etc[]">IHD
-                    </label>
+                <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" name="disease_etc[]" id="disease_etc5">
+                    <label class="custom-control-label" for="disease_etc5">IHD</label>
                 </div>
-                <div class="control">
-                    <label class="checkbox">
-                        <input type="checkbox" name="disease_etc[]" checked="checked">Foot ulcer
-                    </label>
+                <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" name="disease_etc[]" id="disease_etc6" checked="checked">
+                    <label class="custom-control-label" for="disease_etc6">Foot ulcer</label>
                 </div>
-                <div class="control">
-                    <label class="checkbox">
-                        <input type="checkbox" name="disease_etc[]" checked="checked">Retinopathy
-                    </label>
+                <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" name="disease_etc[]" id="disease_etc7" checked="checked">
+                    <label class="custom-control-label" for="disease_etc7">Retinopathy</label>
                 </div>
-                <div class="control">
-                    <label class="checkbox">
-                        <input type="checkbox" name="disease_etc[]" checked="checked">Dyslipidemia
-                    </label>
+                <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" name="disease_etc[]" id="disease_etc8" checked="checked">
+                    <label class="custom-control-label" for="disease_etc8">Dyslipidemia</label>
                 </div>
             </div>
-        </div>
-        <div class="column">
-            <div class="field">
-                <div class="control">
-                    การวินิจฉัยโรคร่วมครั้งแรก ประมาณ พ.ศ. <input class="input" type="date" name="disease_etc_date" id="disease_etc_date">
+            <div class="form-group">
+                <label for="disease_etc_date" class="font-weight-bold">การวินิจฉัยโรคร่วมครั้งแรกเมื่อ</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="disease_etc_date" name="disease_etc_date" value="2020-06-26">
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="columns">
-        <div class="column">
-            <div class="field">
-                <label class="label">ประวัติบุหรี่</label>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="cigarette">สูบบุหรี่
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="cigarette" checked="checked">ไม่สูบบุหรี่
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="cigarette">N/A
-                    </label>
+    <div class="row">
+        <div class="col-md">
+            <div class="form-group">
+                <label for="doctor_name" class="font-weight-bold">Foot care</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="foot_care" id="foot_care1" checked="checked">
+                    <label class="custom-control-label" for="foot_care1">ให้ความรู้</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="foot_care" id="foot_care2">
+                    <label class="custom-control-label" for="foot_care2">ไม่ได้ให้ความรู้</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="foot_care_date" class="font-weight-bold">วันที่ให้ความรู้</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="foot_care_date" name="foot_care_date" value="2020-06-26">
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="doctor_name" class="font-weight-bold">Nutrition</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="nutrition" id="nutrition1" checked="checked">
+                    <label class="custom-control-label" for="nutrition1">ให้ความรู้</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="nutrition" id="nutrition2">
+                    <label class="custom-control-label" for="nutrition2">ไม่ได้ให้ความรู้</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="nutrition_date" class="font-weight-bold">วันที่ให้ความรู้</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="nutrition_date" name="nutrition_date" value="2020-06-26">
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="doctor_name" class="font-weight-bold">Exercise</label>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="exercise" id="exercise1" checked="checked">
+                    <label class="custom-control-label" for="exercise1">ให้ความรู้</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="exercise" id="exercise2">
+                    <label class="custom-control-label" for="exercise2">ไม่ได้ให้ความรู้</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exercise_date" class="font-weight-bold">วันที่ให้ความรู้</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="exercise_date" name="exercise_date" value="2020-06-26">
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="columns">
-        <div class="column">
-            <div class="field">
-                <label class="label">Foot care</label>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="foot_care">ให้ความรู้
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="foot_care" checked="checked">ไม่ได้ให้ความรู้
-                    </label>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="field">
-                <div class="control">
-                วันที่ให้ความรู้ <input class="input" type="date" name="foot_care_date" id="foot_care_date">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="columns">
-        <div class="column">
-            <div class="field">
-                <label class="label">Nutrition</label>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="nutrition">ให้ความรู้
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="nutrition" checked="checked">ไม่ได้ให้ความรู้
-                    </label>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="field">
-                <div class="control">
-                วันที่ให้ความรู้ <input class="input" type="date" name="nutrition_date" id="nutrition_date">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="columns">
-        <div class="column">
-            <div class="field">
-                <label class="label">Exercise</label>
-                <div class="control">
-                    <label class="radio">
-                        <input type="radio" name="exercise">ให้ความรู้
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="exercise" checked="checked">ไม่ได้ให้ความรู้
-                    </label>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="field">
-                <div class="control">
-                วันที่ให้ความรู้ <input class="input" type="date" name="exercise_date" id="exercise_date">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="columns">
-        <div class="column">
-            <div class="field">
-                <label class="label">BS</label>
-                <div class="columns is-variable is-1">
-                    <div class="column">
-                        <div class="field has-addons">
-                        <p class="control"><input class="input" type="text" name="bs" value="202"> </p>
-                        <p class="control"><a class="button is-static">mg/dl</a></p>
-                        </div>
+    <div class="row">
+        <div class="col-md">
+            <div class="form-group">
+                <label for="yot" class="font-weight-bold">BS</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="bs" name="bs" value="202" aria-describedby="aria-bs">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="aria-bs">mg/dl</span>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="column">
-            <div class="field">
-                <label class="label">HbA1c</label>
-                <div class="columns is-variable is-1">
-                    <div class="column">
-                        <div class="field has-addons">
-                        <p class="control"><input class="input" type="text" name="hba1c" value="9.3"> </p>
-                        <p class="control"><a class="button is-static">%</a></p>
-                        </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="yot" class="font-weight-bold">HbA1c</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="hba1c" name="hba1c" value="9.3" aria-describedby="aria-hba1c">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="aria-hba1c">%</span>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="column">
-            <div class="field">
-                <label class="label">LDL</label>
-                <div class="columns is-variable is-1">
-                    <div class="column">
-                        <div class="field has-addons">
-                        <p class="control"><input class="input" type="text" name="ldl" value="32"> </p>
-                        <p class="control"><a class="button is-static">mg/dl</a></p>
-                        </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="yot" class="font-weight-bold">LDL</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="ldl" name="ldl" value="32" aria-describedby="aria-ldl">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="aria-ldl">mg/dl</span>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="column">
-            <div class="field">
-                <label class="label">Creatinine</label>
-                <div class="columns is-variable is-1">
-                    <div class="column">
-                        <div class="field has-addons">
-                        <p class="control"><input class="input" type="text" name="creatinine" value="1.28"> </p>
-                        <p class="control"><a class="button is-static">mg/dl</a></p>
-                        </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="yot" class="font-weight-bold">Creatinine</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="creatinine" name="creatinine" value="1.28" aria-describedby="aria-creatinine">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="aria-creatinine">mg/dl</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="columns">
-        <div class="column">
-            <div class="field">
-                <label class="label">Urine protein</label>
-                <div class="control"><input class="input" type="text" name="urine_protein" value=""></div>
+    <div class="row">
+        <div class="col-md">
+            <div class="form-group">
+                <label for="urine_protein" class="font-weight-bold">Urine protein</label>
+                <input type="text" class="form-control" id="urine_protein" name="urine_protein" value="">
             </div>
         </div>
-        <div class="column">
-            <div class="field">
-                <label class="label">UA</label>
-                <div class="control"><input class="input" type="text" name="ua" value=""></div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="ua" class="font-weight-bold">UA</label>
+                <input type="text" class="form-control" id="ua" name="ua" value="">
             </div>
         </div>
-        <div class="column">
-            <div class="field">
-                <label class="label">Microalbuminuria</label>
-                <div class="control"><input class="input" type="text" name="microalbuminuria" value=""></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="columns">
-        <div class="column">
-            <div class="field">
-                <!-- <img src="images/bs.png" alt="images"> -->
+        <div class="col-md">
+            <div class="form-group">
+                <label for="microalbuminuria" class="font-weight-bold">Microalbuminuria</label>
+                <input type="text" class="form-control" id="microalbuminuria" name="microalbuminuria" value="">
             </div>
         </div>
     </div>
 
-    <div class="field is-grouped-centered">
-        <div class="control">
-            <button class="button is-primary is-large is-fullwidth">บันทึกข้อมูล</button>
-            <input type="hidden" name="action" value="save_form">
-            <!-- <input type="hidden" name="page" value="patient_form"> -->
+    <!-- GRAPH SHOW HERE -->
+
+    <div class="row">
+        <div class="col-md">
+            <button type="button" class="btn btn-primary btn-lg btn-block">บันทึกข้อมูล</button>
         </div>
     </div>
-
-
-
-
 
 </form>
 <script>
@@ -553,6 +494,15 @@ var loadFile = function(event,divId) {
         URL.revokeObjectURL(output.src) // free memory
     }
 };
+
+
+$('#date_register').datepicker({
+    format: "yyyy-mm-dd",
+    language: "th",
+    todayHighlight: true,
+    clearBtn: true,
+    todayBtn: true
+});
 
 $('#birthDate').datepicker({
     format: "yyyy-mm-dd",
@@ -579,6 +529,47 @@ $('#foot_exam_date').datepicker({
 });
 
 $('#teeth_date').datepicker({
+    format: "yyyy-mm-dd",
+    language: "th",
+    todayHighlight: true,
+    clearBtn: true,
+    todayBtn: true
+});
+
+
+$('#diag_date').datepicker({
+    format: "yyyy-mm-dd",
+    language: "th",
+    todayHighlight: true,
+    clearBtn: true,
+    todayBtn: true
+});
+
+$('#disease_etc_date').datepicker({
+    format: "yyyy-mm-dd",
+    language: "th",
+    todayHighlight: true,
+    clearBtn: true,
+    todayBtn: true
+});
+
+$('#foot_care_date').datepicker({
+    format: "yyyy-mm-dd",
+    language: "th",
+    todayHighlight: true,
+    clearBtn: true,
+    todayBtn: true
+});
+
+$('#nutrition_date').datepicker({
+    format: "yyyy-mm-dd",
+    language: "th",
+    todayHighlight: true,
+    clearBtn: true,
+    todayBtn: true
+});
+
+$('#exercise_date').datepicker({
     format: "yyyy-mm-dd",
     language: "th",
     todayHighlight: true,
