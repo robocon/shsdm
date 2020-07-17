@@ -12,6 +12,9 @@
 <script src="bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
 <script src="bootstrap-datepicker-master/dist/locales/bootstrap-datepicker.th.min.js"></script>
 
+<link rel="stylesheet" href="ChartJs/Chart.min.css">
+<script src="ChartJs/Chart.bundle.min.js"></script>
+
 <div class="jumbotron">
     <h1>ฟอร์มบันทึกข้อมูลเบาหวาน</h1>
 </div>
@@ -213,7 +216,7 @@
                 <label for="retinal_exam_img">เลือกรูป</label>
                 <input type="file" class="form-control-file" name="retinal_exam_img" id="retinal_exam_img" accept="image/*" onchange="loadFile(event,'retinalExample')">
                 <div>
-                    <img id="retinalExample" class="img-thumbnail" style="max-width: 300px; max-height: 300px;" src="images/retinal-exam.jpg">
+                    <img id="retinalExample" class="img-fluid img-thumbnail" style="max-width: 350px; max-height: 350px;" src="images/retinal-exam.jpg">
                 </div>
             </div>
         </div>
@@ -240,7 +243,7 @@
                 <label for="foot_exam_img">เลือกรูป</label>
                 <input type="file" class="form-control-file" name="foot_exam_img" id="foot_exam_img" accept="image/*" onchange="loadFile(event,'footExample')">
                 <div>
-                    <img id="footExample" class="img-thumbnail" style="max-width: 300px; max-height: 300px;" src="images/foot-exam.png">
+                    <img id="footExample" class="img-fluid img-thumbnail" style="max-width: 350px; max-height: 350px;" src="images/foot-exam.png">
                 </div>
             </div>
         </div>
@@ -476,15 +479,57 @@
         </div>
     </div>
 
-    <!-- GRAPH SHOW HERE -->
+    <div class="row">
+        <div class="col-md-6">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
 
     <div class="row">
         <div class="col-md">
             <button type="button" class="btn btn-primary btn-lg btn-block">บันทึกข้อมูล</button>
         </div>
     </div>
-
+    <div class="row">
+        <div class="col-md">
+            &nbsp;
+        </div>
+    </div>
 </form>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+
+    var myChart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['พค 61','กค 62','สค 62','ตค 62','พค 63'],
+        datasets: [{
+            label: 'เบาหวาน',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            fill: false,
+            data: [84,85,92,144,202],
+            lineTension: 0.1
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        },
+        responsive: true
+    }
+});
+
+</script>
 <script>
 // Upload Preview Image
 var loadFile = function(event,divId) {
