@@ -1,13 +1,3 @@
-<style>
-.myInput{
-    border: 1px solid #565656;
-    font-size: 1rem;
-    height: 2.5em;
-    line-height: 1.5;
-    border-radius: 4px;
-}
-</style>
-
 <link rel="stylesheet" href="bootstrap-datepicker-master/dist/css/bootstrap-datepicker3.min.css">
 <script src="bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
 <script src="bootstrap-datepicker-master/dist/locales/bootstrap-datepicker.th.min.js"></script>
