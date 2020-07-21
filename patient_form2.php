@@ -14,19 +14,19 @@
         <div class="col-md">
             <div class="form-group">
                 <label for="idcard" class="font-weight-bold">เลขบัตรประชาชน</label>
-                <input type="text" class="form-control" id="idcard" name="idcard" value="">
+                <input type="text" class="form-control" id="idcard" name="idcard" value="3520101469381">
             </div>
         </div>
         <div class="col-md">
             <div class="form-group">
                 <label for="date_register" class="font-weight-bold">วันที่ลงทะเบียน</label>
-                <input type="text" class="form-control" id="date_register" name="date_register" value="">
+                <input type="text" class="form-control" id="date_register" name="date_register" value="2018-02-22">
             </div>
         </div>
         <div class="col-md">
             <div class="form-group">
                 <label for="date_register" class="font-weight-bold">DM Number</label>
-                <p>-</p>
+                <p>2869</p>
             </div>
         </div>
     </div>
@@ -34,25 +34,25 @@
         <div class="col-md">
             <div class="form-group">
                 <label for="yot" class="font-weight-bold">ยศ/คำนำหน้าชื่อ</label>
-                <input type="text" class="form-control" id="yot" name="yot" value="">
+                <input type="text" class="form-control" id="yot" name="yot" value="นาย">
             </div>
         </div>
         <div class="col-md">
             <div class="form-group">
                 <label for="name" class="font-weight-bold">ชื่อ</label>
-                <input type="text" class="form-control" id="name" name="name" value="">
+                <input type="text" class="form-control" id="name" name="name" value="กี">
             </div>
         </div>
         <div class="col-md">
             <div class="form-group">
                 <label for="surname" class="font-weight-bold">นามสกุล</label>
-                <input type="text" class="form-control" id="surname" name="surname" value="">
+                <input type="text" class="form-control" id="surname" name="surname" value="เป็กเตปิน">
             </div>
         </div>
         <div class="col-md">
             <div class="form-group">
                 <label class="font-weight-bold">วัน-เดือน-ปี เกิด</label>
-                <input type="text" class="form-control" id="birthDate" name="birthDate" value="">
+                <input type="text" class="form-control" id="birthDate" name="birthDate" value="1950-02-02">
             </div>
         </div>
     </div>
@@ -61,7 +61,7 @@
             <div class="form-group">
                 <label for="yot" class="font-weight-bold">ส่วนสูง</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="height" name="height" value="" aria-describedby="aria-height">
+                    <input type="text" class="form-control" id="height" name="height" value="160" aria-describedby="aria-height">
                     <div class="input-group-append">
                         <span class="input-group-text" id="aria-height">ซม.</span>
                     </div>
@@ -72,7 +72,7 @@
             <div class="form-group">
                 <label for="yot" class="font-weight-bold">น้ำหนัก</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="weight" name="weight" value="" aria-describedby="aria-weight">
+                    <input type="text" class="form-control" id="weight" name="weight" value="62" aria-describedby="aria-weight">
                     <div class="input-group-append">
                         <span class="input-group-text" id="aria-weight">กก.</span>
                     </div>
@@ -83,7 +83,7 @@
             <div class="form-group">
                 <label for="yot" class="font-weight-bold">รอบเอว</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="waist" name="waist" value="" aria-describedby="aria-waist">
+                    <input type="text" class="form-control" id="waist" name="waist" value="89" aria-describedby="aria-waist">
                     <div class="input-group-append">
                         <span class="input-group-text" id="aria-waist">กก.</span>
                     </div>
@@ -94,7 +94,7 @@
             <div class="form-group">
                 <label for="yot" class="font-weight-bold">อุณหภูมิ</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="temp" name="temp" value="" aria-describedby="aria-temp">
+                    <input type="text" class="form-control" id="temp" name="temp" value="36.5" aria-describedby="aria-temp">
                     <div class="input-group-append">
                         <span class="input-group-text" id="aria-temp">กก.</span>
                     </div>
@@ -107,7 +107,7 @@
             <div class="form-group">
                 <label for="yot" class="font-weight-bold">Pulse</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="pulse" name="pulse" value="" aria-describedby="aria-pulse">
+                    <input type="text" class="form-control" id="pulse" name="pulse" value="98" aria-describedby="aria-pulse">
                     <div class="input-group-append">
                         <span class="input-group-text" id="aria-pulse">ครั้ง/นาที</span>
                     </div>
@@ -118,7 +118,7 @@
             <div class="form-group">
                 <label for="yot" class="font-weight-bold">Rate</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="rate" name="rate" value="" aria-describedby="aria-rate">
+                    <input type="text" class="form-control" id="rate" name="rate" value="20" aria-describedby="aria-rate">
                     <div class="input-group-append">
                         <span class="input-group-text" id="aria-rate">ครั้ง/นาที</span>
                     </div>
@@ -129,7 +129,7 @@
             <div class="form-group">
                 <label for="yot" class="font-weight-bold">BMI</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="bmi" name="bmi" value="" aria-describedby="bmi">
+                    <input type="text" class="form-control" id="bmi" name="bmi" value="26.17" aria-describedby="bmi">
                     <div class="input-group-append">
                         <span class="input-group-text" id="bmi">กก.</span>
                     </div>
@@ -140,11 +140,11 @@
             <div class="form-group">
                 <label for="yot" class="font-weight-bold">ความดัน</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="sys" name="sys" value="" aria-describedby="sys">
+                    <input type="text" class="form-control" id="sys" name="sys" value="128" aria-describedby="sys">
                     <div class="input-group-append">
                         <span class="input-group-text" id="temp">/</span>
                     </div>
-                    <input type="text" class="form-control" id="dia" name="dia" value="" >
+                    <input type="text" class="form-control" id="dia" name="dia" value="62" >
                 </div>
             </div>
         </div>
@@ -158,7 +158,7 @@
                     <label class="custom-control-label" for="cigarette1">สูบบุหรี่</label>
                 </div>
                 <div class="custom-control custom-radio">
-                    <input class="custom-control-input" type="radio" name="cigarette" id="cigarette2">
+                    <input class="custom-control-input" type="radio" name="cigarette" id="cigarette2" checked="checked">
                     <label class="custom-control-label" for="cigarette2">ไม่สูบบุหรี่</label>
                 </div>
                 <div class="custom-control custom-radio">
@@ -179,7 +179,7 @@
             <div class="form-group">
                 <label for="retinal_exam_date" class="font-weight-bold">Retinal Exam</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="retinal_exam_date" name="retinal_exam_date" value="">
+                    <input type="text" class="form-control" id="retinal_exam_date" name="retinal_exam_date" value="2020-06-26">
                 </div>
                 <div class="custom-control custom-radio">
                     <input class="custom-control-input" type="radio" name="retinal_exam" id="retinal_exam1">
@@ -194,7 +194,7 @@
                     <label class="custom-control-label" for="retinal_exam3">Moderate NPDR</label>
                 </div>
                 <div class="custom-control custom-radio">
-                    <input class="custom-control-input" type="radio" name="retinal_exam" id="retinal_exam4">
+                    <input class="custom-control-input" type="radio" name="retinal_exam" id="retinal_exam4" checked="checked">
                     <label class="custom-control-label" for="retinal_exam4">Severe NPDR</label>
                 </div>
                 <div class="custom-control custom-radio">
@@ -206,7 +206,7 @@
                 <label for="retinal_exam_img">เลือกรูป</label>
                 <input type="file" class="form-control-file" name="retinal_exam_img" id="retinal_exam_img" accept="image/*" onchange="loadFile(event,'retinalExample')">
                 <div>
-                    <img id="retinalExample" class="img-fluid img-thumbnail" style="max-width: 350px; max-height: 350px;" src="">
+                    <img id="retinalExample" class="img-fluid img-thumbnail" style="max-width: 350px; max-height: 350px;" src="images/retinal-exam.jpg">
                 </div>
             </div>
         </div>
@@ -214,14 +214,14 @@
             <div class="form-group">
                 <label for="foot_exam_date" class="font-weight-bold">Foot Exam</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="foot_exam_date" name="foot_exam_date" value="">
+                    <input type="text" class="form-control" id="foot_exam_date" name="foot_exam_date" value="2020-06-26">
                 </div>
                 <div class="custom-control custom-radio">
                     <input class="custom-control-input" type="radio" name="foot_exam" id="foot_exam1">
                     <label class="custom-control-label" for="foot_exam1">Low Risk</label>
                 </div>
                 <div class="custom-control custom-radio">
-                    <input class="custom-control-input" type="radio" name="foot_exam" id="foot_exam2">
+                    <input class="custom-control-input" type="radio" name="foot_exam" id="foot_exam2" checked="checked">
                     <label class="custom-control-label" for="foot_exam2">Moderate Risk</label>
                 </div>
                 <div class="custom-control custom-radio">
@@ -233,7 +233,7 @@
                 <label for="foot_exam_img">เลือกรูป</label>
                 <input type="file" class="form-control-file" name="foot_exam_img" id="foot_exam_img" accept="image/*" onchange="loadFile(event,'footExample')">
                 <div>
-                    <img id="footExample" class="img-fluid img-thumbnail" style="max-width: 350px; max-height: 350px;" src="">
+                    <img id="footExample" class="img-fluid img-thumbnail" style="max-width: 350px; max-height: 350px;" src="images/foot-exam.png">
                 </div>
             </div>
         </div>
@@ -248,7 +248,7 @@
                     <label class="custom-control-label" for="teeth1">ได้รับการตรวจ</label>
                 </div>
                 <div class="custom-control custom-radio">
-                    <input class="custom-control-input" type="radio" name="teeth" id="teeth2">
+                    <input class="custom-control-input" type="radio" name="teeth" id="teeth2" checked="checked">
                     <label class="custom-control-label" for="teeth2">ไม่ได้รับการตรวจ</label>
                 </div>
             </div>
@@ -263,7 +263,7 @@
                     <label class="custom-control-label" for="diag1">DM type1</label>
                 </div>
                 <div class="custom-control custom-radio">
-                    <input class="custom-control-input" type="radio" name="diag" id="diag2">
+                    <input class="custom-control-input" type="radio" name="diag" id="diag2" checked="checked">
                     <label class="custom-control-label" for="diag2">DM type2</label>
                 </div>
                 <div class="custom-control custom-radio">
@@ -274,7 +274,7 @@
             <div class="form-group">
                 <label for="diag_date" class="font-weight-bold">การวินิจฉัยครั้งแรก ประมาณ พ.ศ.</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="diag_date" name="diag_date" value="">
+                    <input type="text" class="form-control" id="diag_date" name="diag_date" value="2014-04-13">
                 </div>
             </div>
         </div>
@@ -331,14 +331,14 @@
                     <label class="custom-control-label" for="disease_etc7">Retinopathy</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                    <input class="custom-control-input" type="checkbox" name="disease_etc[]" id="disease_etc8">
+                    <input class="custom-control-input" type="checkbox" name="disease_etc[]" id="disease_etc8" checked="checked">
                     <label class="custom-control-label" for="disease_etc8">Dyslipidemia</label>
                 </div>
             </div>
             <div class="form-group">
                 <label for="disease_etc_date" class="font-weight-bold">การวินิจฉัยโรคร่วมครั้งแรกเมื่อ</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="disease_etc_date" name="disease_etc_date" value="">
+                    <input type="text" class="form-control" id="disease_etc_date" name="disease_etc_date" value="2014-04-13">
                 </div>
             </div>
         </div>
@@ -352,7 +352,7 @@
                     <label class="custom-control-label" for="foot_care1">ให้ความรู้</label>
                 </div>
                 <div class="custom-control custom-radio">
-                    <input class="custom-control-input" type="radio" name="foot_care" id="foot_care2">
+                    <input class="custom-control-input" type="radio" name="foot_care" id="foot_care2" checked="checked">
                     <label class="custom-control-label" for="foot_care2">ไม่ได้ให้ความรู้</label>
                 </div>
             </div>
@@ -371,7 +371,7 @@
                     <label class="custom-control-label" for="nutrition1">ให้ความรู้</label>
                 </div>
                 <div class="custom-control custom-radio">
-                    <input class="custom-control-input" type="radio" name="nutrition" id="nutrition2">
+                    <input class="custom-control-input" type="radio" name="nutrition" id="nutrition2" checked="checked">
                     <label class="custom-control-label" for="nutrition2">ไม่ได้ให้ความรู้</label>
                 </div>
             </div>
@@ -390,7 +390,7 @@
                     <label class="custom-control-label" for="exercise1">ให้ความรู้</label>
                 </div>
                 <div class="custom-control custom-radio">
-                    <input class="custom-control-input" type="radio" name="exercise" id="exercise2">
+                    <input class="custom-control-input" type="radio" name="exercise" id="exercise2" checked="checked">
                     <label class="custom-control-label" for="exercise2">ไม่ได้ให้ความรู้</label>
                 </div>
             </div>
@@ -407,7 +407,7 @@
             <div class="form-group">
                 <label for="yot" class="font-weight-bold">BS</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="bs" name="bs" value="" aria-describedby="aria-bs">
+                    <input type="text" class="form-control" id="bs" name="bs" value="163" aria-describedby="aria-bs">
                     <div class="input-group-append">
                         <span class="input-group-text" id="aria-bs">mg/dl</span>
                     </div>
@@ -418,7 +418,7 @@
             <div class="form-group">
                 <label for="yot" class="font-weight-bold">HbA1c</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="hba1c" name="hba1c" value="" aria-describedby="aria-hba1c">
+                    <input type="text" class="form-control" id="hba1c" name="hba1c" value="6.3" aria-describedby="aria-hba1c">
                     <div class="input-group-append">
                         <span class="input-group-text" id="aria-hba1c">%</span>
                     </div>
@@ -429,7 +429,7 @@
             <div class="form-group">
                 <label for="yot" class="font-weight-bold">LDL</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="ldl" name="ldl" value="" aria-describedby="aria-ldl">
+                    <input type="text" class="form-control" id="ldl" name="ldl" value="41" aria-describedby="aria-ldl">
                     <div class="input-group-append">
                         <span class="input-group-text" id="aria-ldl">mg/dl</span>
                     </div>
@@ -440,7 +440,7 @@
             <div class="form-group">
                 <label for="yot" class="font-weight-bold">Creatinine</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="creatinine" name="creatinine" value="" aria-describedby="aria-creatinine">
+                    <input type="text" class="form-control" id="creatinine" name="creatinine" value="1.73" aria-describedby="aria-creatinine">
                     <div class="input-group-append">
                         <span class="input-group-text" id="aria-creatinine">mg/dl</span>
                     </div>
@@ -495,15 +495,15 @@ var ctx = document.getElementById('myChart').getContext('2d');
 
     // The data for our dataset
     data: {
-        // labels: ['พค 61','กค 62','สค 62','ตค 62','พค 63'],
-        // datasets: [{
-        //     label: 'เบาหวาน',
-        //     backgroundColor: 'rgb(255, 99, 132)',
-        //     borderColor: 'rgb(255, 99, 132)',
-        //     fill: false,
-        //     data: [84,85,92,144,163],
-        //     lineTension: 0.1
-        // }]
+        labels: ['พค 61','กค 62','สค 62','ตค 62','พค 63'],
+        datasets: [{
+            label: 'เบาหวาน',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            fill: false,
+            data: [84,85,92,144,163],
+            lineTension: 0.1
+        }]
     },
 
     // Configuration options go here

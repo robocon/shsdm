@@ -16,17 +16,17 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>3521300298138</td>
-                    <td>นางสุคนธ์ทิพย์ สิทธิหล้า</td>
-                    <td>26 มิถุนายน 2563</td>
-                    <td><a href="index.php?page=patient_form"><span class="icon"><i class="fas fa-user-edit" title="แก้ไขข้อมูล"></i></span></a></td>
+                    <td>3520101469381</td>
+                    <td>นายกี เป็กเตปิน</td>
+                    <td>2018-02-22</td>
+                    <td><a href="index.php?page=patient_form2"><span class="icon"><i class="fas fa-user-edit" title="แก้ไขข้อมูล"></i></span></a></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>1509999999999</td>
-                    <td>ร.ต.สมบูรณ์ อินต๊ะขัน</td>
-                    <td>29 มิถุนายน 2563</td>
-                    <td><a href="index.php?page=patient_form"><span class="icon"><i class="fas fa-user-edit" title="แก้ไขข้อมูล"></i></span></a></td>
+                    <td>3521300259825</td>
+                    <td>นายถาวร กาวาท</td>
+                    <td>2017-03-31</td>
+                    <td><a href="index.php?page=patient_form3"><span class="icon"><i class="fas fa-user-edit" title="แก้ไขข้อมูล"></i></span></a></td>
                 </tr>
             </tbody>
         </table>
